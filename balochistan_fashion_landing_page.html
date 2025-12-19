@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="logo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="logo.png">
+  <title>Balochistan | Threads of Tradition</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .hero video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+      z-index: -2;
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.45);
+      z-index: -1;
+    }
+
+    /* HEADER */
+    header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 25px 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 10;
+    }
+
+   /* Logo image */
+   .logo img {
+      height: 100px;
+      transform: scale(1.1);
+      transform-origin: left center;
+    }
+
+    nav a {
+      margin-left: 35px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+      position: relative;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      left: 0;
+      bottom: -6px;
+      background: #fff;
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    /* CENTER TEXT */
+    .hero-content {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero-content h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.8rem, 6vw, 4.5rem);
+      font-weight: 600;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .hero-content p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+      max-width: 650px;
+      margin: 0 auto;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      header {
+        padding: 20px 30px;
+      }
+
+      nav a {
+        margin-left: 18px;
+        font-size: 0.9rem;
+      }
+
+      /* Logo image */
+      .logo img {
+        height: 100px;
+        transform: scale(1.1);
+        transform-origin: left center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+
+    <!-- Background Video -->
+    <!-- Replace video-balochistan.mp4 with licensed footage -->
+    <video autoplay muted loop playsinline>
+      <source src="video-balochistan.mp4" type="video/mp4" />
+    </video>
+
+    <div class="overlay"></div>
+
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <!-- Replace logo.png with exported Canva logo -->
+        <img src="logo.png" alt="Brand Logo" />
+      </div>
+
+      <nav>
+        <a href="threads.html">Threads of Tradition</a>
+        <a href="modern.html">Modern Looks Timeless Roots</a>
+        <a href="wear.html">Wear The Culture</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </header>
+
+    <!-- Hero Text -->
+    <div class="hero-content">
+      <div>
+        <h1>Threads of Tradition</h1>
+        <p>
+          A modern expression of Balochistan’s heritage — where craftsmanship,
+          culture, and identity are woven into every thread.
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+</body>
+</html>
